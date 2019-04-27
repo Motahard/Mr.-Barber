@@ -1,14 +1,14 @@
 <?php
+
+if (isset($_POST['name'])){
+
+$admin_email = "mas280499@yandex.by";
 $name = $_POST['name'];
 $tel= $_POST['tel'];
 $date= $_POST['date'];
 $service= $_POST['service'];
 
-if (mail("mas280499@myandex.by", "Заявка с сайта", "Имя:".$name.". Телефон: ".$tel , ". Date: ".$date ,". Услуга: ".$service ,"From: example2@mail.ru \r\n"))
-{ 
-  echo "сообщение успешно отправлено"; 
-} 
-else { 
-  echo "при отправке сообщения возникли ошибки"; 
+mail($admin_email, "name", $name . "telephone" . $tel, "date" . $date, "service" . $service);
+
+header('Location: http://mrbarberl.netlify.com/index.html')
 }
-?>
