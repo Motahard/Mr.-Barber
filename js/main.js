@@ -42,7 +42,16 @@ function init() {
   });
   
   myMap.controls.add(searchControl);
-  
+
+  myGeoObject = new ymaps.GeoObject({
+    // Описание геометрии.
+    geometry: {
+        type: "Point",
+        coordinates: [52.117174, 26.115624]
+    }
+})
+myMap.geoObjects
+        .add(myGeoObject)
   // Программно выполним поиск определённых кафе в текущей
   // прямоугольной области карты.
 }
