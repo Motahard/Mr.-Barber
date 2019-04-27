@@ -54,21 +54,21 @@ a {
   color: white;
   justify-content: space-between;
   z-index: 1;
-  padding: 1rem;
+  padding: 1rem 0.5rem;
 }
 
 #navbar .logo {
   color: #e2e1e1;
 }
 
-#navbar ul {
+#navbar ul {  
   display: flex;
   align-items: center;
 }
 
 #navbar ul li a {
-  padding: 0.75rem;
-  font-size: 14px;
+  padding: 1.25rem;
+  font-size: 1rem;
   color: #e2e1e1;
 }
 
@@ -139,7 +139,6 @@ a {
 #aboutus {
   display: flex;
   min-height: 350px;
-  
   background-color: rgb(233, 233, 233);
 }
 
@@ -201,6 +200,29 @@ a {
   width: 50%; 
 }
 
+#services{
+  background-color: rgb(233, 233, 233);
+  text-align: center;
+  padding: 2rem;
+}
+
+#services .container h2 {
+  margin-bottom: 1.5rem;
+}
+
+#services .container > div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px dotted black;
+  max-width: 50%;
+  padding: 0.5rem;
+  margin: auto;
+}
+
+#services .container > div h3 {
+  margin-right: 1.5rem;
+}
 #feedback {
   background: #333;
   color: #fff;
@@ -339,11 +361,19 @@ a {
   padding: 0 0.5rem;
 }
 
+#main-footer .container .socia-links a:first-child:hover {
+  color: rgb(75, 119, 168);
+}
+
+#main-footer .container .socia-links a:last-child:hover {
+  color: rgb(186, 63, 123);
+}
+
 #main-footer .container .contacts p{
   margin-top: 0.5rem;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   #navbar{
     flex-direction: column;
     justify-content: center;
@@ -370,7 +400,6 @@ a {
     width: 100%;
   }
   #showcase .showcase-content h1 {
-    width: 100%;
     font-size: 2rem;
     margin-bottom: 20px;
   }
@@ -384,7 +413,7 @@ a {
     flex-direction: column;
     text-align: center;
     justify-items: center;
-    height: 280px;
+    min-height: 280px;
   }
 
   #aboutus .container-img {

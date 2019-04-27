@@ -22,11 +22,6 @@ section .container form > div {
   align-items: center;
 }
 
-section .container form div label::after {
-  content:"*";
-  color: red;
-}
-
 section .container form div label {
   width: 30%;
   margin: 0 0.5rem;

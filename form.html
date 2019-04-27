@@ -23,28 +23,33 @@
         <form action="process.php" method="POST">
           <div>
           <label for="name">Имя </label>
-          <input type="text" required name="name" id="name" placeholder="Введите Имя...">
+          <input type="text" required name="name" id="name">
         </div>
           <div>
           <label for="surname">Фамилия </label>
-          <input type="text" required name="surname" id="surname" placeholder="Введите Фамилию...">
+          <input type="text" required name="surname" id="surname">
         </div>
           <div>
           <label for="name">Моб. Телефон </label>
-          <input type="tel" required name="tel" id="tel" placeholder="Введите Телефон...">
+          <input type="tel" required name="tel" id="tel">
         </div>
+          <div>
+           <label for="name">Дата </label>
+          <input type="date" required name="date" id="date">
+         </div>
           <div>
             <label for="service">Услуги </label>
             <select name="service" id="service">
               <option value="m-hair" selected>Мужская стрижка</option>
-              <option value="f-hair">Женская стрижка</option>
+              <option value="m-hair-fast">Стрижка машинкой</option>
               <option value="m-beard">Стрижка бороды</option>
-              <option value="color">Покраска</option>
-              <option value="tattoo">Тату</option>
-              <option value="makeup">Макияж</option>
+              <option value="m-beard-king">Королевское бритьё</option>
+              <option value="color-head">Тонирование головы</option>
+              <option value="color-beard">Тонирование бороды</option>
             </select>
         </div>
           <input type="submit" class="btn">
+          <input type="reset" value="Сбросить" class="btn">
         </form>
       </div>
     </section>
