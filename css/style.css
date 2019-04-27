@@ -322,10 +322,9 @@ a {
   color: #000;
 }
 #location .container .location-map {
-  padding: 1rem;
   flex: 2;
-  height: 50vh;
-  margin-right: 20px;
+  min-height: 50vh;
+  width: 90%;
 }
 
 #location .container .location-content p {
@@ -469,12 +468,11 @@ a {
 
   #location .container {
     flex-direction: column;
-    
+    width: 90%;
   }
   #location .container .location-content {
     text-align: center;
     padding: 3rem;
-    width: 80%;
     margin-bottom: 1rem;
   }
 
@@ -484,8 +482,6 @@ a {
 
   #location .container .location-map {
     align-self: center;
-    height: 50vh;
-    width: 80%;
     margin: 0;
   }
 
