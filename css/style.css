@@ -292,8 +292,7 @@ a {
 
 
 
-#feedback .container .img1 {
-  background: url('../img/people1.jpg') no-repeat center center/cover;
+#feedback .container .img img{
   border-radius: 50%;
   width: 100px;
   height: 100px;
@@ -304,25 +303,57 @@ a {
   max-width: 1000px;
 }
 
-#feedback .container .img1-content {
+#feedback .container .img-content {
   float: right;
   max-width: 80%;
 }
 
-#feedback .container .img2 {
-  background: url('../img/people2.jpg') no-repeat center center/cover;
+#feedback .container .img {
   border-radius: 50%;
   width: 100px;
   height: 100px;
   float: left;
 }
-#feedback .container .img2-content {
+#feedback .container .img-content {
   float: right;
   max-width: 80%;
 }
 
 #feedback .container div {
   margin: 20px 0px;
+}
+
+#feedback .container form .flex {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+#feedback .container form .flex div {
+  width: 100%;
+}
+
+#feedback .container form .flex #feedback_text {
+  max-width: 90%;
+  min-width: 90%;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  min-height: 6rem;
+}
+
+#feedback .container form .flex #feedback_call {
+  background-color: #fff;
+  color: #000;
+}
+
+#feedback .container .flex #feedback_call:hover {
+  background-color: #f1a3a3;
+  cursor: pointer;
 }
 
 #contact {
@@ -512,12 +543,12 @@ a {
     display: none;
   }
 
-  #feedback .container .img1, #feedback .container .img2 {
+  #feedback .container .img {
     height: 150px;
     width: 150px;
   }
 
-  #feedback .container .img1-content, #feedback .container .img2-content {
+  #feedback .container .img-content{
     display: block;
     text-align: center;
   }

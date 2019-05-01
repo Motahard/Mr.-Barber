@@ -83,26 +83,42 @@
           <h3>Тонирование Бороды</h3>
           <p>10 руб.</p>
         </div>
-        <div>
-          <h3>Подровнять Котику Усики</h3>
-          <p>Бесплатно</p>
-        </div>
       </div>
     </section>
 
   <section id="feedback">
     <h2><span class="text-primary">Отзывы</span></h2>
     <div class="container">
-      <div class="img1"></div>
-      <div class="img1-content">
-        <p>Очень хочется сказать большое спасибо работникам салона "Mr. Barber" за высокий профессионализм, душевное отношение,за неформальное отношение к своему делу! После посещения салона остались только приятные воспоминания, тем более, что друзья с восторгом оценили мой новый образ! В следующем году поеду в отпуск - обязательно зайду в салон. Спасибо!</p>
+      <div id="feedback-content">
+        <div class="people">
+          <div class="img"><img src="./img/people1.jpg" alt=""></div>
+          <div class="img-content">
+            <p>Очень хочется сказать большое спасибо работникам салона "Mr. Barber" за высокий профессионализм, душевное отношение,за неформальное отношение к своему делу! После посещения салона остались только приятные воспоминания, тем более, что друзья с восторгом оценили мой новый образ! В следующем году поеду в отпуск - обязательно зайду в салон. Спасибо!</p>
+          </div>
+          <div class="clr"></div>
       </div>
-      <div class="clr"></div>
-      <div class="img2"></div>
-      <div class="img2-content">
+      <div class="people">
+      <div class="img"><img src="./img/people2.jpg" alt=""></div>
+      <div class="img-content">
         <p>Рад, что наконец-то нашел место, где меня понимают и сделают стрижку именно так как я захочу. Все это из-за того, что мастера профессиональные и специализируются на мужских стрижках, знают толк в них и могут посоветовать и подобрать то, что тебе наиболее подходит.</p>
       </div>
       <div class="clr"></div>
+    </div>
+  </div>
+        <form>
+          <div class="flex">
+            <h3><span class="text-primary">Оставить</span> ваш отзыв: </label></h3>
+            <div>
+                <textarea name="feedback_text" id="feedback_text" placeholder="Введите Текст..."></textarea>
+            </div>
+            <div> 
+              <input type="file" id="feedback_img" value="Выберите картинку">
+            </div>
+            <div>
+              <button id="feedback_call" class="btn" onclick="insert()">Отправить Отзыв</button>
+            </div>
+          </div>
+        </form>
   </div>
   </section>
 
@@ -159,5 +175,6 @@
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<d5c4bcc2-6cff-41ab-9435-7631b91b661c>" type="text/javascript"></script>
   <script src="./js/main.js"></script>
   <script src="js/preload.js"></script>
+  <script src="js/feedback.js"></script>
 </body>
 </html>
