@@ -5,6 +5,7 @@
 
 section .container {
   margin: 4rem auto;
+  width: 90%;
   padding: 1.5rem 0;
   color: #000;
   background: #f2f2f2;

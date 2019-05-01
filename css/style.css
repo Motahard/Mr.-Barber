@@ -45,6 +45,61 @@ a {
   color: black;
 }
 
+.preload {
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  opacity: 1;
+  visibility: visible;
+  z-index: 4;
+}
+
+.preload.done {
+  opacity: 0;
+  visibility: hidden;
+  z-index: 0;
+}
+
+
+.preload .load {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  
+  border: 10px solid #f1a3a3;
+  border-radius: 50%;
+  border-top-color: aqua;
+  transform: translate(-50%, -50%);
+  animation: 1s spin infinite ease-out;
+}
+
+.preload .cat {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  transform: translate(-50%, -50%);
+  background: url('/img/1.svg') no-repeat center center/cover;
+  background-color: rgb(228, 202, 202);
+}
+
+@keyframes spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+
 #navbar {
   display: flex;
   position: sticky;
@@ -94,7 +149,7 @@ a {
   position: absolute;
   height: 100%;
   width: 100%;
-  opacity: 0.8;
+  opacity: 0.7;
   left:0;
   top:0;
   z-index: -1;
@@ -103,6 +158,7 @@ a {
 #showcase .showcase-content{
   margin: auto;
   width: 50%; 
+  color: #000;
 }
 
 
@@ -377,16 +433,16 @@ a {
 
 @media only screen and (max-width: 768px) {
   h1 {
-    font-size: 1.25rem !important; 
+    font-size: 1.5rem !important; 
   }
   h2 {
-    font-size: 1.1rem !important;
+    font-size: 1.4rem !important;
   }
   h3 {
-    font-size: 1rem !important;
+    font-size: 1.25rem !important;
   }
   p {
-    font-size: 0.8rem !important;
+    font-size: 1rem !important;
   }
 
   #navbar{
@@ -457,8 +513,8 @@ a {
   }
 
   #feedback .container .img1, #feedback .container .img2 {
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
   }
 
   #feedback .container .img1-content, #feedback .container .img2-content {
