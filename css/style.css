@@ -24,6 +24,21 @@ a {
   text-decoration: none;
 }
 
+.show {
+  display: flex !important;
+  flex-direction: column;
+  grid-column: 1/3;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+
+.hide {
+  display: none !important;
+}
+
 .container {
   max-width: 1300px;
   margin: auto;
@@ -114,6 +129,7 @@ a {
 
 #navbar .logo {
   color: #e2e1e1;
+  margin-left: 1rem;
 }
 
 #navbar ul {  
@@ -132,6 +148,20 @@ a {
   background: #e2e1e1;
   border-radius: 5px;
 }
+
+#navbar .btn-menu {
+  display: none;
+  margin-right: 1rem;
+  transform: rotate(90deg);
+  height: 100%;
+}
+
+#navbar .btn-menu #btn-menu-main {
+  margin-top: 0;
+  font-size: 1.3rem;
+  transition: 0.5s transform ease-in-out;
+}
+
 
 #showcase {
   position: relative;
@@ -445,9 +475,12 @@ a {
     font-size: 1rem !important;
   }
 
-  #navbar{
-    flex-direction: column;
-    justify-content: center;
+  #navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
   }
 
   #navbar ul li a{
@@ -459,8 +492,23 @@ a {
   }
 
   #navbar ul {
-    align-self: center;
-    margin-top: 1rem;
+    
+    display: none;
+  }
+
+  #navbar ul li {
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    width: 90%;
+    border-top: 1px dotted #fff;
+  }
+
+  #navbar ul li:first-child {
+    border-top: 0;
+  }
+
+  #navbar .btn-menu {
+    display:block;
   }
 
   #showcase {
