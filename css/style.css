@@ -477,38 +477,40 @@ a {
 
   #navbar {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     justify-content: space-between;
     align-items: center;
     text-align: center;
   }
 
+  #navbar .logo {
+    margin-left: 0;
+  }
+
   #navbar ul li a{
     font-size: 0.8rem;
      padding: 0.5rem;
-  } 
-  #navbar a {
     align-self: center;  
-  }
+  } 
 
   #navbar ul {
-    
+    margin-top: 1rem;
     display: none;
   }
 
   #navbar ul li {
-    margin-top: 0.5rem;
-    padding-top: 0.5rem;
-    width: 90%;
+    margin-top: 0.25rem;
+    padding-top: 0.25rem;
+    width: 80%;
     border-top: 1px dotted #fff;
   }
-
-  #navbar ul li:first-child {
-    border-top: 0;
+  #navbar ul li a {
+    display: block;
   }
 
   #navbar .btn-menu {
     display:block;
+    margin-right: 0;
   }
 
   #showcase {
